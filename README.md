@@ -1,5 +1,6 @@
 # FetchSaga 
 
+[![npm version](https://badge.fury.io/js/fetch-saga.svg)](https://badge.fury.io/js/fetch-saga)
 [![Build Status](https://travis-ci.org/pasalino/fetch-saga.svg?branch=master)](https://travis-ci.org/pasalino/fetch-saga)
 [![Maintainability](https://api.codeclimate.com/v1/badges/39e16bdb9565432e4fcc/maintainability)](https://codeclimate.com/github/pasalino/fetch-saga/maintainability)
 [![codecov](https://codecov.io/gh/pasalino/fetch-saga/branch/master/graph/badge.svg)](https://codecov.io/gh/pasalino/fetch-saga)
