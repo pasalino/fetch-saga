@@ -1,0 +1,10 @@
+{
+  "presets": [
+    "babel-preset-env",
+    "env",
+    "stage-3"
+  ],
+  "plugins": [
+    "remove-comments"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "globals": {
+    "expect": true,
+    "fetch": true,
+    "FormData": true
+  },
+  "rules": {
+    "padded-blocks": "error",
+    "no-use-before-define": [
+      "error",
+      "nofunc"
+    ],
+    "no-unused-expressions": "error"
+  },
+  "parser": "babel-eslint",
+  "plugins": []
+}

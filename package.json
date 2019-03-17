@@ -1,0 +1,58 @@
+{
+  "name": "fetch-saga",
+  "version": "1.0.0",
+  "description": "ReduxSaga library con http call without wrote redundant code",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint src tests",
+    "pretest": "npm run lint",
+    "test": "mocha --require babel-core/register tests",
+    "babel": "babel src/ -d lib",
+    "prepack": "npm run test & npm run babel",
+    "report-coverage": "./node_modules/.bin/nyc npm test && ./node_modules/.bin/nyc report --reporter=text-lcov > coverage.lcov && codecov"
+  },
+  "homepage": "https://pasalino.com",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pasalino/fetch-saga"
+  },
+  "keywords": [
+    "redux",
+    "redux-saga",
+    "react",
+    "http",
+    "fetch"
+  ],
+  "author": "Pasqualino de Simone <pasalino@gmail.com>",
+  "constributors": [],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-remove-comments": "^2.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "codecov": "^3.0.4",
+    "eslint": "^5.15.2",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "husky": "^1.0.0-rc.13",
+    "mocha": "latest",
+    "nyc": "^13.3.0"
+  },
+  "dependencies": {
+    "redux-saga": "^1.0.2"
+  }
+}

@@ -1,0 +1,16 @@
+node_modules
+coverage
+*.log
+src
+dist
+es
+.idea
+tests
+coverage.lcov
+examples
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc
+.travis.yml
+CONTRIBUTING.md
